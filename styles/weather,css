@@ -1,0 +1,26 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center;
+}
+
+main {
+  padding: 1rem;
+}
+
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+#weather-icon {
+  width: 100px;
+  height: auto;
+}

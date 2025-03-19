@@ -1,0 +1,135 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #003366;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 1rem;
+}
+
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero .cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #003366;
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.events {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.weather {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.spotlights {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+#spotlight-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.spotlight-card {
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.spotlight-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.spotlight-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.25rem;
+  color: #003366;
+}
+
+.spotlight-card p {
+  margin: 0.25rem 0;
+  color: #555;
+}
+
+.spotlight-card a {
+  color: #003366;
+  text-decoration: none;
+}
+
+.spotlight-card a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 767px) {
+  .hero .cta {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  #spotlight-cards {
+    grid-template-columns: 1fr;
+  }
+}
