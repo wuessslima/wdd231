@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Plan - Stage & Prose</title>
+  <style>
+    :root {
+      --primary: #6C3483;
+      --secondary: #F39C12;
+      --accent: #2ECC71;
+      --light: #FDFEFE;
+      --dark: #1B2631;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.6;
+      color: var(--dark);
+      background-color: var(--light);
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+      color: var(--primary);
+    }
+    header {
+      background-color: var(--primary);
+      color: var(--light);
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+    #title {
+        color: var(--secondary);
+    }
+    section {
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .color-scheme {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin: 20px 0;
+}
+
+    .color-square {
+      width: 120px;
+      height: 120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+    .wireframe {
+      background-color: #eee;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1 id="title">Website Plan: Stage & Prose</h1>
+  </header>
+
+  <section id="site-name">
+    <h2>Stage & Prose</h2>
+    <p><strong>Pages & Screens</strong></p>
+    <p>This name was chosen because it represents the project's duality (books and films) in a simple and memorable way. The "&" symbol suggests the connection between these two art forms.</p>
+  </section>
+
+  <section id="purpose">
+    <h2>Website Purpose</h2>
+    <p>The site will be a hub for literature and cinema enthusiasts, offering:</p>
+    <ul>
+      <li>Catalog of books and films with detailed information</li>
+      <li>Rating and recommendation system</li>
+      <li>Themed discussion forum</li>
+      <li>Schedule of virtual and in-person meetups</li>
+      <li>Monthly challenges section (e.g., "Read a book and watch its adaptation")</li>
+    </ul>
+  </section>
+
+  <section id="scenarios">
+    <h2>User Scenarios</h2>
+    <ol>
+      <li><strong>"I want to find books similar to what I already like"</strong> - The site will provide recommendations based on preferences and rating history.</li>
+      <li><strong>"How can I participate in discussions about the movie of the month?"</strong> - The site will have a clear forum section with topics organized by work.</li>
+      <li><strong>"Are there in-person meetups in my city?"</strong> - The calendar will show events filtered by location.</li>
+    </ol>
+  </section>
+
+  <section id="colors">
+    <h2>Color Scheme</h2>
+    <div class="color-scheme">
+        <div class="color-square" style="background-color: #6C3483; color: white;">
+          Purple<br>#6C3483
+        </div>
+        <div class="color-square" style="background-color: #F39C12; color: black;">
+          Orange<br>#F39C12
+        </div>
+        <div class="color-square" style="background-color: #2ECC71; color: black;">
+          Green<br>#2ECC71
+        </div>
+        <div class="color-square" style="background-color: #FDFEFE; color: black; border: 2px solid #1B2631;">
+          White<br>#FDFEFE
+        </div>
+        <div class="color-square" style="background-color: #1B2631; color: white;">
+          Black<br>#1B2631
+        </div>
+      </div>
+  </section>
+
+  <section id="typography">
+    <h2>Typography</h2>
+    <p><strong>Playfair Display</strong> - Used for titles (visual impact and elegance)</p>
+    <p style="font-family: 'Montserrat', sans-serif;"><strong>Montserrat</strong> - Used for body text (good readability)</p>
+  </section>
+
+  <section id="wireframe">
+    <h2>Wireframe</h2>
+    <div class="wireframe">
+      <h3>Desktop Version</h3>
+      <img src="./images/desktop.png" alt="desktop-wireframe">
+      
+      <h3>Mobile Version</h3>
+      <img src="./images/mobile.png" alt="mobile-wireframe">
+    </div>
+  </section>
+
+  <section id="content">
+    <h2>Main Content</h2>
+    <h3>1. Catalog</h3>
+    <p>Integration with APIs (OMDB for movies, Google Books for books) + local JSON for exclusive content</p>
+    
+    <h3>2. Rating System</h3>
+    <p>Forms with localStorage to save user ratings</p>
+    
+    <h3>3. Forum</h3>
+    <p>JSON-based comments simulating discussion threads</p>
+    
+    <h3>4. Calendar</h3>
+    <p>Interactive calendar with virtual (Zoom) and in-person (Google Maps) events</p>
+  </section>
+</body>
+</html>
