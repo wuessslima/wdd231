@@ -1,0 +1,52 @@
+{
+    "attractions": [
+        {
+            "name": "Praia do Futuro",
+            "image": "praia-futuro.webp",
+            "address": "Av. Zezé Diogo, Fortaleza - CE",
+            "description": "Famous beach with beach bars serving fresh seafood."
+        },
+        {
+            "name": "Mercado Central",
+            "image": "mercado-central.webp",
+            "address": "Av. Alberto Nepomuceno, 199 - Centro",
+            "description": "Traditional market with local crafts and food."
+        },
+        {
+            "name": "Dragão do Mar",
+            "image": "dragao-mar.webp",
+            "address": "R. Dragão do Mar, 81 - Praia de Iracema",
+            "description": "Cultural center with museums, theaters and planetarium."
+        },
+        {
+            "name": "Beach Park",
+            "image": "beach-park.webp",
+            "address": "Rod. CE-341, Km 2 - Aquiraz",
+            "description": "One of Brazil's largest water parks."
+        },
+        {
+            "name": "Catedral Metropolitana",
+            "image": "catedral.webp",
+            "address": "R. Sobral, 1 - Centro",
+            "description": "Impressive Gothic-style cathedral in downtown."
+        },
+        {
+            "name": "Parque do Cocó",
+            "image": "coco-park.webp",
+            "address": "Av. Padre Antônio Tomás, s/n",
+            "description": "Urban park with trails and mangrove ecosystem."
+        },
+        {
+            "name": "Estoril",
+            "image": "estoril.webp",
+            "address": "Av. Beira Mar, 3080 - Meireles",
+            "description": "Historic restaurant with ocean views."
+        },
+        {
+            "name": "Iracema Beach",
+            "image": "iracema-beach.webp",
+            "address": "Av. Beira Mar - Praia de Iracema",
+            "description": "Popular beach with nightlife and cultural spots."
+        }
+    ]
+}

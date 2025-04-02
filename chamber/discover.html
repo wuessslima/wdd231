@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Fortaleza's top attractions, cultural sites, and business opportunities with the Fortaleza Chamber of Commerce">
+    <title>Discover Fortaleza | Fortaleza Chamber of Commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="scripts/discover.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    
+    <header>
+        <div class="header-content">
+            <h1>Fortaleza Chamber of Commerce</h1>
+            <nav aria-label="Primary navigation">
+                <ul id="primaryNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html" class="active" aria-current="page">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="date" id="current-date"></div>
+    </header>
+
+    <main id="main-content" class="discover">
+        <aside class="sidebar" aria-labelledby="sidebar-heading">
+            <h2 id="sidebar-heading">Visitor Information</h2>
+            <div id="visitMessage" class="visit-message"></div>
+            <div class="demographics">
+                <h3>Fortaleza at a Glance</h3>
+                <ul>
+                    <li><strong>Population:</strong> 2.7 million</li>
+                    <li><strong>Founded:</strong> 1726</li>
+                    <li><strong>Avg Temp:</strong> 27°C (81°F)</li>
+                    <li><strong>Timezone:</strong> GMT-3</li>
+                </ul>
+            </div>
+        </aside>
+
+        <section class="gallery" aria-labelledby="gallery-heading">
+            <h2 id="gallery-heading">Explore Fortaleza</h2>
+            <div class="cards-container" id="attractions-container">
+                <!-- Cards dynamically inserted by discover.js -->
+                <div class="loading-spinner" aria-live="polite">Loading attractions...</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <address>
+                    <p>123 Business Ave<br>Fortaleza, CE 60000-000</p>
+                    <p><a href="mailto:info@fortalezachamber.com">info@fortalezachamber.com</a></p>
+                    <p><a href="tel:+558512345678">(85) 1234-5678</a></p>
+                </address>
+            </div>
+            <div class="map">
+                <iframe 
+                    src="https://maps.google.com/maps?q=fortaleza&output=embed" 
+                    title="Fortaleza Map Location"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+        <div class="base-footer">
+            <p>&copy; <span id="currentyear"></span> Fortaleza Chamber</p>
+            <p>Wesley Lima | WDD 230 Project</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

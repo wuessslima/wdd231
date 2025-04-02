@@ -1,3 +1,4 @@
+/* ===== BASE STYLES ===== */
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -7,6 +8,7 @@ body {
   color: #333;
 }
 
+/* ===== HEADER & NAVIGATION ===== */
 header {
   background-color: #003366;
   color: white;
@@ -33,10 +35,12 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* ===== MAIN CONTENT AREA ===== */
 main {
   padding: 1rem;
 }
 
+/* ===== FOOTER ===== */
 footer {
   background-color: #003366;
   color: white;
@@ -45,6 +49,21 @@ footer {
   margin-top: 2rem;
 }
 
+.contact-info a {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
+.contact-info a:hover {
+  color: #f8f8f8 !important;
+  text-decoration: none;
+}
+
+.base-footer {
+  color: rgba(255,255,255,0.8);
+}
+
+/* ===== MEMBER DIRECTORY ===== */
 #view-toggle {
   display: flex;
   gap: 0.5rem;
@@ -105,6 +124,7 @@ footer {
   text-decoration: underline;
 }
 
+/* List View Styles */
 .list-view {
   display: flex;
   flex-direction: column;
@@ -125,52 +145,7 @@ footer {
   border-radius: 5px;
 }
 
-@media only screen and (max-width: 767px) {
-  header {
-    padding: 0.5rem;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  #view-toggle {
-    flex-direction: column;
-  }
-
-  #view-toggle button {
-    width: 100%;
-  }
-
-  #member-cards {
-    grid-template-columns: 1fr;
-  }
-
-  .member-card {
-    padding: 0.5rem;
-  }
-
-  .member-card h2 {
-    font-size: 1.1rem;
-  }
-
-  .member-card p {
-    font-size: 0.9rem;
-  }
-
-  .list-view .member-card {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .list-view .member-card img {
-    width: 100%;
-    max-width: 200px;
-  }
-}
-
-/* Join Page Specific Styles */
+/* ===== JOIN PAGE ===== */
 .join-container {
   display: grid;
   gap: 2rem;
@@ -224,6 +199,7 @@ button[type="submit"]:hover {
   background-color: #002244;
 }
 
+/* Membership Cards */
 .membership-cards {
   display: grid;
   gap: 1rem;
@@ -251,6 +227,7 @@ button[type="submit"]:hover {
   }
 }
 
+/* Membership Card Colors */
 .np-card { background-color: #e6f2ff; }
 .bronze-card { background-color: #f5e6cc; }
 .silver-card { background-color: #e6e6e6; }
@@ -266,6 +243,7 @@ button[type="submit"]:hover {
   text-decoration: underline;
 }
 
+/* Modal Dialog */
 dialog {
   border: none;
   border-radius: 8px;
@@ -288,8 +266,139 @@ dialog::backdrop {
   cursor: pointer;
 }
 
+/* ===== DISCOVER PAGE ===== */
+.discover {
+  display: grid;
+  grid-template-areas:
+      "sidebar"
+      "gallery";
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.gallery {
+  grid-area: gallery;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card figure {
+  margin: 0;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card button {
+  background-color: #003366;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* ===== MEDIA QUERIES ===== */
+@media only screen and (max-width: 767px) {
+  header {
+    padding: 0.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  #view-toggle {
+    flex-direction: column;
+  }
+
+  #view-toggle button {
+    width: 100%;
+  }
+
+  #member-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .member-card {
+    padding: 0.5rem;
+  }
+
+  .member-card h2 {
+    font-size: 1.1rem;
+  }
+
+  .member-card p {
+    font-size: 0.9rem;
+  }
+
+  .list-view .member-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .list-view .member-card img {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
 @media (min-width: 768px) {
   .join-container {
     grid-template-columns: 2fr 1fr;
+  }
+}
+
+/* Medium screens */
+@media (min-width: 641px) {
+  .cards-container {
+      grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+}
+
+/* Large screens */
+@media (min-width: 1025px) {
+  .discover {
+      grid-template-areas: "sidebar gallery";
+      grid-template-columns: 300px 1fr;
+  }
+  
+  .cards-container {
+      grid-template-columns: repeat(3, 1fr);
   }
 }
