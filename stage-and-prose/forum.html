@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage & Prose - Discussion Forum</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="main-header">
+        <a class="skip-link" href="#main-content">Skip to main content</a>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html" aria-label="Voltar para página inicial">
+                    <h1>Stage & Prose</h1>
+                </a>
+            </div>
+
+            <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="primary-nav">
+                <span class="hamburger">☰</span>
+            </button>
+
+            <nav id="primary-nav" aria-label="Navegação principal">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="catalog.html">Catalog</a></li>
+                    <li><a href="forum.html">Forum</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="forum-container container">
+        <h1 id="forum-heading">Forum Page</h1>
+        <div class="forum-actions">
+            <div class="search-box">
+                <input type="text" placeholder="Search discussions...">
+                <button type="submit">Search</button>
+            </div>
+        </div>
+
+        <div class="forum-categories">
+            <div class="category-card">
+                <div class="category-icon">
+                    <img src="images/book-icon.svg" alt="" width="40">
+                </div>
+                <h2>Book Discussions</h2>
+                <p>Latest: <a href="#">The Little Prince analysis</a></p>
+                <span class="topic-count">128 Topics</span>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">
+                    <img src="images/film-icon.svg" alt="" width="40">
+                </div>
+                <h2>Film Adaptations</h2>
+                <p>Latest: <a href="#">LOTR book vs movie</a></p>
+                <span class="topic-count">92 Topics</span>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">
+                    <img src="images/chat-icon.svg" alt="" width="40">
+                </div>
+                <h2>General Discussion</h2>
+                <p>Latest: <a href="#">Upcoming adaptations 2025</a></p>
+                <span class="topic-count">64 Topics</span>
+            </div>
+        </div>
+
+        <section class="recent-discussions">
+            <h2>Recent Discussions</h2>
+            <div class="discussion-list">
+                <article class="discussion">
+                    <div class="discussion-author">
+                        <img src="images/user1.jpg" alt="User avatar" width="50">
+                        <span>Maria_S</span>
+                    </div>
+                    <div class="discussion-content">
+                        <h3><a href="#">Character development in The Hobbit</a></h3>
+                        <p>Just finished rereading The Hobbit and noticed how differently Tolkien develops Bilbo compared to movie version...</p>
+                        <div class="discussion-meta">
+                            <span class="replies">24 replies</span>
+                            <span class="last-activity">2 hours ago</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="discussion">
+                    <div class="discussion-author">
+                        <img src="images/user2.jpg" alt="User avatar" width="50">
+                        <span>BookLover42</span>
+                    </div>
+                    <div class="discussion-content">
+                        <h3><a href="#">Most faithful book-to-film adaptation?</a></h3>
+                        <p>In your opinion, what's the most accurate film adaptation of a book you've ever seen?...</p>
+                        <div class="discussion-meta">
+                            <span class="replies">37 replies</span>
+                            <span class="last-activity">5 hours ago</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <a href="#" class="btn btn--outline">View All Discussions</a>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <h3>Stage & Prose</h3>
+                <p>Connecting books and movies since 2025</p>
+            </div>
+
+            <nav class="footer-nav" aria-label="Navegação secundária">
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="attributions.html">Attributions</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer-social">
+                <h3>Social Media</h3>
+                <ul>
+                    <li><a href="#" aria-label="Instagram"><img src="images/instagram.svg" alt="" width="24"></a></li>
+                    <li><a href="#" aria-label="Twitter"><img src="images/twitter.svg" alt="" width="24"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-base">
+            <p>&copy; <span id="current-year"></span> Stage & Prose. All rights reserved.</p>
+            <p id="last-modified"></p>
+        </div>
+    </footer>
+
+    <script src="js/forum.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+[
+    {
+      "id": "b1",
+      "type": "book",
+      "title": "The Great Gatsby",
+      "creator": "F. Scott Fitzgerald",
+      "year": 1925,
+      "genre": "Classic",
+      "description": "A story of wealth, love, and the American Dream in the 1920s.",
+      "image": "gatsby.webp",
+      "rating": 4.2
+    },
+    {
+      "id": "b2",
+      "type": "book",
+      "title": "Dune",
+      "creator": "Frank Herbert",
+      "year": 1965,
+      "genre": "Sci-Fi",
+      "description": "A epic science fiction saga set in a distant future.",
+      "image": "dune.webp",
+      "rating": 4.5
+    }
+  ]

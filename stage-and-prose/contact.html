@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage & Prose - Contact</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="main-header">
+        <a class="skip-link" href="#main-content">Skip to main content</a>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html" aria-label="Voltar para página inicial">
+                    <h1>Stage & Prose</h1>
+                </a>
+            </div>
+
+            <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="primary-nav">
+                <span class="hamburger">☰</span>
+            </button>
+
+            <nav id="primary-nav" aria-label="Navegação principal">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="catalog.html">Catalog</a></li>
+                    <li><a href="forum.html">Forum</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="contact-container container">
+        <div class="contact-hero">
+            <h1 id="contact-heading">Get in Touch</h1>
+            <p>Have questions about books, films, or adaptations? We'd love to hear from you!</p>
+        </div>
+
+        <div class="contact-grid">
+            <section class="contact-form">
+                <h2>Send us a message</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject">
+                            <option value="general">General Inquiry</option>
+                            <option value="suggestion">Book/Film Suggestion</option>
+                            <option value="partnership">Partnership</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary">Send Message</button>
+                </form>
+            </section>
+
+            <aside class="contact-info">
+                <div class="info-card">
+                    <h3>Contact Information</h3>
+                    <ul>
+                        <li>
+                            <img src="images/icon-email.svg" alt="" width="20">
+                            contact@stageandprose.com
+                        </li>
+                        <li>
+                            <img src="images/icon-phone.svg" alt="" width="20">
+                            +1 (555) 123-4567
+                        </li>
+                        <li>
+                            <img src="images/icon-map.svg" alt="" width="20">
+                            123 Bookworm Lane, Litville
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="social-links">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram">
+                            <img src="images/instagram.svg" alt="" width="28">
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <img src="images/twitter.svg" alt="" width="28">
+                        </a>
+                        <a href="#" aria-label="Goodreads">
+                            <img src="images/goodreads.svg" alt="" width="28">
+                        </a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <h3>Stage & Prose</h3>
+                <p>Connecting books and movies since 2025</p>
+            </div>
+
+            <nav class="footer-nav" aria-label="Navegação secundária">
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="attributions.html">Attributions</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer-social">
+                <h3>Social Media</h3>
+                <ul>
+                    <li><a href="#" aria-label="Instagram"><img src="images/instagram.svg" alt="" width="24"></a></li>
+                    <li><a href="#" aria-label="Twitter"><img src="images/twitter.svg" alt="" width="24"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-base">
+            <p>&copy; <span id="current-year"></span> Stage & Prose. All rights reserved.</p>
+            <p id="last-modified"></p>
+        </div>
+    </footer>
+</body>
